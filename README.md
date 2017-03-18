@@ -5,26 +5,31 @@
 - But it is applicable to other tasks as well.
 
 ## Key features
+### 1. Define the model
 - **Task type**
-  - classification
-  - regression
+  - Classification
+  - Regression
 - **Cost function**
   - MSE (Mean Square Error)
-  - cross-entropy
+  - Cross-entropy
 
-## Cross-validation
+</br>
+
+### 2. Cross-validation
 - K-fold cross-validation
   - (nfolds) without inner CV for parameter optimization
 - K-fold **nested** cross validation  
   - (nfolds) by (vfolds)  
 
-## Not to overfit
+</br>
+
+### 3. Not to overfit
 - **L1** & **L2** regularization
   - and its corresponding **lambda**
   - or a candidate **list of lambdas** (if nested cv applied)
 - **Dropout**
   - and **dropout rate**
 - **Resampling** methods
-  - none
+  - None
   - Bayesian
   - GaussianNoise
