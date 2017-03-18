@@ -1,23 +1,30 @@
 # NNproject
-This is a neural network implementation in MATLAB submitted as a term project in Intro to Artificial Neural Networks class.
-This network is currently applied to a specific task of predicting age by one's normalized fMRI data, but applicalbe to other tasks as well.
+- This is a **neural network implementation** in MATLAB.
+- It is designed as a term project in Intro to Artificial Neural Networks class.
+- This network is currently applied to a specific task of **predicting age by one's normalized fMRI data.**
+- But it is applicable to other tasks as well.
 
-## Features
-- choice of cost function
-  - MSE
-  - cross-entropy
-- task type
+## Key features
+- **Task type**
   - classification
   - regression
-- k-fold nested cross validation
-  - (nfolds) by (vfolds)
-- k-fold cross-validation
+- **Cost function**
+  - MSE (Mean Square Error)
+  - cross-entropy
+
+## Cross-validation
+- K-fold cross-validation
   - (nfolds) without inner CV for parameter optimization
-- L1-L2 regularization
-  - and a candidate list of their lambda values
-- dropout
-  - and dropoutRate
-- resampling
-  - 'none'
-  - 'Bayesian'
-  - 'GaussianNoise'
+- K-fold **nested** cross validation  
+  - (nfolds) by (vfolds)  
+
+## Not to overfit
+- **L1** & **L2** regularization
+  - and its corresponding **lambda**
+  - or a candidate **list of lambdas** (if nested cv applied)
+- **Dropout**
+  - and **dropout rate**
+- **Resampling** methods
+  - none
+  - Bayesian
+  - GaussianNoise
